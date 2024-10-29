@@ -155,7 +155,7 @@ public class loginPage extends javax.swing.JFrame {
                 
                 try (ResultSet rs = st.executeQuery(sql)) {
                     if(rs.next()) {
-                        new welcome().setVisible(true);
+                        new menu().setVisible(true);
                         this.dispose(); // Close login window
                     } else {
                         JOptionPane.showMessageDialog(this, "Username or password is incorrect");
